@@ -1,11 +1,9 @@
 import React from "react"
 import {Category} from ".";
-const Categories = ({categoryList}) => {
+export const Categories = ({categoryList}) => {
     return (
         <div className="category-list">
-            {categoryList.map(category => <Category {...category}></Category>)}
+            {categoryList.map((category, categoryIdx) => <Category key={categoryIdx} {...category}></Category>)}
         </div>
     );
 }
-
-export default Categories;

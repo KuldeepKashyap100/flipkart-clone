@@ -1,14 +1,11 @@
 import React from 'react';
 import { DropDown } from '.';
+import state from "../data/state.json";
 
-const HeaderOptions = () => {
+export const HeaderOptions = () => {
     return (
         <div className="header-options-wrapper">
-            <DropDown label="Kuldeep" list={["My Profile", "Orders"]} />
-            <DropDown label="More" list={["Notification Preferences", "Sell On Flipkart"]} />
-               
+            {state.headerOptions.map((headerOption) => <DropDown label={headerOption.label} list={headerOption.list} />)}               
         </div>
     );
 }
-
-export default HeaderOptions;

@@ -1,7 +1,7 @@
 import React from "react";
 import {BiSearch} from "react-icons/bi";
 
-const SearchBar = () => {
+export const SearchBar = () => {
     return (
         <div className="search-bar-wrapper">
             <form>
@@ -13,5 +13,3 @@ const SearchBar = () => {
         </div>
     );
 }
-
-export default SearchBar;

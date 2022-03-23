@@ -1,11 +1,10 @@
 import React from "react";
-import FlipkartLogo from "./FlipkartLogo";
-import { SearchBar, HeaderOptions } from './';
+import { SearchBar, HeaderOptions, FlipkartLogo } from './';
 
 
-const Header = () => {
+export const Header = () => {
     return (
-        <div class="header-wrapper">
+        <div className="header-wrapper">
             <div style={{width: "124px", height: "100%"}}></div>
             <div className="header">
                 <FlipkartLogo />
@@ -16,5 +15,3 @@ const Header = () => {
         </div>
     );
 }
-
-export default Header;

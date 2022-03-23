@@ -5,6 +5,10 @@
     padding: 0;
     font-family: "Roboto","Arial","sans-serif";
 }
+.content {
+    padding: 8px;
+    background-color: #f0f0f0;
+}
 @import "./flipkartLogo.scss";
 @import "./header.scss";
 @import "./searchBar.scss";
@@ -12,4 +16,4 @@
 @import "./DropDown.scss";
 @import "./Categories.scss";
 @import "./Category.scss";
-
+@import "./Carousel.scss";

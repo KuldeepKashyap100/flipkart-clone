@@ -1,5 +1,5 @@
 
-const Category = ({imgUrl, name}) => {
+export const Category = ({imgUrl, name}) => {
     return (
         <div className="category">
             <img src={imgUrl} alt="category"></img>
@@ -7,5 +7,3 @@ const Category = ({imgUrl, name}) => {
         </div>
     );
 }
-
-export default Category;
